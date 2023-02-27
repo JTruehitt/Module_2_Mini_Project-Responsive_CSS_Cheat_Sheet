@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #0e95d8;
+  --clr-secondary: #ffffff;
+
+  --bg-clr-main: #373941;
+  --bg-clr-code: linear-gradient(
+    rgba(095, 236, 200, 0.3) 0%,
+    rgba(095, 236, 200, 0.6) 100%
+  );
+
+  --fw-bold: 700;
+
+  --ff-titles: "Veranda";
+  --ff-text: sans-serif;
+
+  --fs-text: 1.25rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+}
+
+/* typography */
+
+body {
+  margin: 0;
+  padding: 0 2em;
+  background-color: var(--bg-clr-main);
+  font-size: var(--fs-text);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+:is(h1, h2, footer) {
+  color: var(--clr-primary);
+  font-family: var(--ff-titles);
+}
+
+:is(.header-subtext, .card-desc) {
+  color: var(--clr-secondary);
+  padding: 0 1em;
+}
+
+.card-desc {
+  margin-top: 0;
+}
+
+.card-code {
+  background-image: var(--bg-clr-code);
+  color: var(--clr-secondary);
+  margin: 1em 1.5em;
+  border-radius: 10px;
+  text-align: left;
+  padding-top: 1em;
+  transition: all 0.5s ease-in-out;
+  user-select: all;
+  white-space: pre-wrap;
+}
+
+.card-header {
+  border: 2px solid var(--clr-secondary);
+  border-radius: 10px;
+  padding: 0.5em;
+  margin: 0 1em;
+  position: relative;
+  top: -25px;
+  background-color: var(--bg-clr-main);
+  transition: all 0.5s ease-in-out;
+}
+
+.card {
+  border: 2px dashed var(--clr-secondary);
+  margin: 2em 0;
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+  font-size: 1.5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card:hover > .card-header,
+.card:hover > .card-code,
+.card:hover {
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+    0 0 15px rgba(232, 102, 236, 1);
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .card-container > * {
+    flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .card-container > * {
+    flex: 0 0 30%;
+  }
+}
