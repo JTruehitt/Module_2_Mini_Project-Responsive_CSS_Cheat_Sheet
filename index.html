@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Cheat Sheet</title>
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Taviraj&family=Work+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -23,11 +26,11 @@
           Use these three properties to create a Flexbox row layout
         </p>
         <pre class="card-code">
-        .row {
-            diplay: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
+ .row {
+     diplay: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
             </pre
         >
       </div>
@@ -35,21 +38,21 @@
         <h2 class="card-header">Flexbox Column</h2>
         <p class="card-desc">Use this to create a Flexbox column layout</p>
         <pre class="card-code">
-        .column {
-            display: flex;
-            flex-direction: column;
-        }
+ .column {
+    display: flex;
+    flex-direction: column;
+ }
         </pre>
       </div>
       <div class="card">
         <h2 class="card-header">CSS Grid Layout</h2>
         <p class="card-desc">Build a 12-column layout using CSS Grid</p>
         <pre class="card-code">
-        .grid {
-            display: grid;
-            width: 100%;
-            grid-template-columns
-        }
+ .grid {
+     display: grid;
+     width: 100%;
+     grid-template-columns
+ }
         </pre>
       </div>
       <div class="card">
@@ -58,29 +61,29 @@
           This will create a background linear gradient from top to bottom
         </p>
         <pre class="card-code">
-        .linear-gradient-background {
-            background-image: linear-gradient(
-                rgba(232, 102, 236, 0.3) 0%
-                rgba(232, 102, 236, 0.6) 100%
-            );
-        }
+  .linear-gradient-background {
+     background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%
+        rgba(232, 102, 236, 0.6) 100%
+     );
+ }
         </pre>
       </div>
       <div class="card">
         <h2 class="card-header">Box Transition Glow</h2>
         <p class="card-desc">Use transition and box shadows to glow on hover</p>
         <pre class="card-code">
-        .card-code .card-header {
-            border-radius: 8px;
-            transition: all 0.5s ease-in-out;
-        }
+ .card-code .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+ }
 
-         .card-code:hover,
-         .card-code:hover .card-header {
-             box-shadow: inset 0px 0px 8px 
-             rgba(232, 102, 236, 1), 
-             0 0 15px rgba(232, 102, 236, 1);
-         }
+  .card-code:hover,
+  .card-code:hover .card-header {
+     box-shadow: inset 0px 0px 8px 
+      rgba(232, 102, 236, 1), 
+      0 0 15px rgba(232, 102, 236, 1);
+ }
         </pre>
       </div>
       <div class="card">
@@ -90,10 +93,10 @@
           than their natural starting point.
         </p>
         <pre class="card-code">
-        .card-header {
-             postion: relative;
-             margin-top: -20px;
-         }
+ .card-header {
+      postion: relative;
+      margin-top: -20px;
+ }
         </pre>
       </div>
     </main>
